@@ -4,6 +4,7 @@ import { ParticlesModule } from 'angular-particle';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
 import { ParticlesComponent } from './particles/particles.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ParticlesComponent } from './particles/particles.component';
   ],
   imports: [
     BrowserModule,
-    ParticlesModule
+    ParticlesModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
