@@ -21,7 +21,8 @@ export class ParticlesComponent implements OnInit {
   		'top': 0,
   		'left': 0,
   		'right': 0,
-  		'bottom': 0
+  		'bottom': 0,
+  		'background-color': '#3C4EAE',
   	};
 
 	this.myParams = {
@@ -34,7 +35,7 @@ export class ParticlesComponent implements OnInit {
 			      }
 		    },
 	            color: {
-	                value: '#000000'
+	                value: '#FFFFFF'
 	            },
 				"shape": {
 					  "type": "circle",
@@ -71,6 +72,13 @@ export class ParticlesComponent implements OnInit {
 						"sync": false
 					  }
 				},
+			    "line_linked": {
+			      "enable": false,
+			      "distance": 150,
+			      "color": "#ffffff",
+			      "opacity": 0.4,
+			      "width": 1
+			    },
 				"move": {
 					"enable": true,
 					"speed": 4,
@@ -85,7 +93,7 @@ export class ParticlesComponent implements OnInit {
 						"rotateY": 1200
 					}
 				}
-	    	} //end particles{}
+	    	}, //end particles{}
 			interactivity: {
 				detect_on: "canvas",
 				events: {
@@ -118,7 +126,7 @@ export class ParticlesComponent implements OnInit {
 				    duration: 0.3
 				  },
 				  push: {
-				    particles_nb: 40
+				    particles_nb: 10
 				  },
 				  remove: {
 				    particles_nb: 2
